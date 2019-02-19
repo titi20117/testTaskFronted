@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding with node.js</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="bloc-page">
+        <div class="container container_header">
+            <div class="container_header_input">
+                <span class="container_header_input_span container_header_input_span_photos-name">Имя</span>
+                <input type="search" onkeyup="searchPhotos()" name="search" id="search" class="container_header_input_search" autofocus>
+            </div>
+            <div class="container_header_select-town">
+                <span class="container_header_select-town_span container_header_select-town_span_photos-place">Город</span>
+                <select name="selected" id="selected" class="container_header_select-town_select" onchange="updateImage(this.id)">
+                    <option class="container_header_select-town_select_option" disabled>Выберите Города</option>
+                </select>
+            </div>
+        </div>
+        <div class="container container_section">
+            <div class="container_section_myModal">
+                <span class="close">&times;</span>
+                    <img src="" class="modal-content" id="img01">
+            </div>
+            <div class="container_section_photos">
+                <% photos.photos_db.forEach(function(photo){ %>
+                    <img src="<%= photo.src %>" alt="<%= photo.city %>" id="<%= photo.id %>" name="<%= photo.name %>" data="<%= photo.city %>" class="container_photos_images">
+                <% }); %>
+            </div>
+        </div>
+    </div>
+    <script src="/views/js/client.js"></script>
+    <script src="/assets/js/retina.js"></script>
+    <script src="/assets/js/popup.js"></script>
+</body>
+</html>

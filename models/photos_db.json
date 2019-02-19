@@ -1,0 +1,124 @@
+{
+    "photos_db": [
+        {
+            "id": "5c408b7c4465e774e0633f0b",
+            "src": "/assets/images/photos/1.jpg",
+            "name": "Molina Slater",
+            "city": "Рязань"
+        },
+        {
+            "id": "5c408b7cc56e7a6f297b749a",
+            "src": "/assets/images/photos/2.jpeg",
+            "name": "Molina Slater",
+            "city": "Рязань"
+        },
+        {
+            "id": "5c408b7c191eda0f320c96a1",
+            "src": "/assets/images/photos/3.jpg",
+            "name": "Molina Slater",
+            "city": "Рязань"
+        },
+        {
+            "id": "5c408b7cd82408d7ed808aa4",
+            "src": "/assets/images/photos/4.jpg",
+            "name": "Imelda Jefferson",
+            "city": "Рязань"
+        },
+        {
+            "id": "5c408b7cfb53d12428d4613f",
+            "src": "/assets/images/photos/5.jpeg",
+            "name": "Imelda Jefferson",
+            "city": "Рязань"
+        },
+        {
+            "id": "5c408b7cbc28fd1ab8ed729e",
+            "src": "/assets/images/photos/6.jpg",
+            "name": "Imelda Jefferson",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7cf92ee8cd9089bbc5",
+            "src": "/assets/images/photos/7.jpeg",
+            "name": "Imelda Jefferson",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7c11291ec047504c7d",
+            "src": "/assets/images/photos/8.jpg",
+            "name": "Imelda Jefferson",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7ce2e4c0debe0c55fc",
+            "src": "/assets/images/photos/9.jpeg",
+            "name": "Leslie Mcconnell",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7cdfbdaf2915371c94",
+            "src": "/assets/images/photos/10.jpg",
+            "name": "Mandy Kerr",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7c655975333ee962a6",
+            "src": "/assets/images/photos/11.jpeg",
+            "name": "Glass Browning",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7c6a048a4b44e3d964",
+            "src": "/assets/images/photos/12.jpg",
+            "name": "Maddox Stein",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7cb9066aa5f7f69089",
+            "src": "/assets/images/photos/13.jpg",
+            "name": "Webster Lambert",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7c903a1194f9fea4b1",
+            "src": "/assets/images/photos/14.jpg",
+            "name": "Loraine Wilkins",
+            "city": "Москва"
+        },
+        {
+            "id": "5c408b7c17096cf43dc49e52",
+            "src": "/assets/images/photos/15.jpeg",
+            "name": "Georgia Graham",
+            "city": "Санкт петербург"
+        },
+        {
+            "id": "5c408b7cc4dceec5db0bc735",
+            "src": "/assets/images/photos/16.jpeg",
+            "name": "Celina Chavez",
+            "city": "Санкт петербург"
+        },
+        {
+            "id": "5c408b7c7f15eb46b8273c70",
+            "src": "/assets/images/photos/17.jpg",
+            "name": "Lila Hammond",
+            "city": "Санкт петербург"
+        },
+        {
+            "id": "5c408b7c9a9437c7f42532af",
+            "src": "/assets/images/photos/18.jpg",
+            "name": "Moran Strong",
+            "city": "Санкт петербург"
+        },
+        {
+            "id": "5c408b7cf42a83cb3794da5b",
+            "src": "/assets/images/photos/19.jpg",
+            "name": "Moran Strong",
+            "city": "Санкт петербург"
+        },
+        {
+            "id": "5c408b7c2ab826f902b0538d",
+            "src": "/assets/images/photos/20.jpg",
+            "name": "Moran Strong",
+            "city": "Санкт петербург"
+        }
+    ]
+}

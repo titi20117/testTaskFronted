@@ -1,0 +1,190 @@
+*:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+}
+.bloc-page {
+  width: 100%;
+  height: 100%;
+}
+.bloc-page .container {
+  width: 90%;
+  margin: 0% 5% 0%;
+  font-size: 1.4em;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container {
+    font-size: 1em;
+  }
+}
+.bloc-page .container_header {
+  position: absolute;
+  background-color: #102521;
+  height: 30%;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header {
+    display: flex;
+    direction: vertical;
+  }
+}
+.bloc-page .container_header .container_header_input {
+  position: absolute;
+  left: 7%;
+  top: 37%;
+}
+.bloc-page .container_header .container_header_input .container_header_input_span {
+  position: absolute;
+  bottom: 1px;
+  color: white;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_input .container_header_input_span {
+    left: 0;
+  }
+}
+.bloc-page .container_header .container_header_input .container_header_input_search {
+  position: absolute;
+  top: 0px;
+  width: 300px;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2em;
+  padding-left: 15px;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_input .container_header_input_search {
+    width: 245px;
+  }
+}
+.bloc-page .container_header .container_header_select-town {
+  position: absolute;
+  left: 85%;
+  top: 37%;
+}
+.bloc-page .container_header .container_header_select-town .container_header_select-town_span {
+  position: absolute;
+  bottom: 1px;
+  color: white;
+  left: 31px;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_select-town .container_header_select-town_span {
+    left: 0;
+  }
+}
+.bloc-page .container_header .container_header_select-town .container_header_select-town_select {
+  position: absolute;
+  top: 0px;
+  width: 300px;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2em;
+  padding-left: 15px;
+  left: -208px;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_select-town .container_header_select-town_select {
+    width: 245px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_select-town .container_header_select-town_select {
+    left: 0;
+  }
+}
+.bloc-page .container_header .container_header_select-town .container_header_select-town_select .container_header_select-town_select_option {
+  top: 0px;
+  width: 300px;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2em;
+  padding-left: 15px;
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_select-town .container_header_select-town_select .container_header_select-town_select_option {
+    width: 245px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bloc-page .container_header .container_header_select-town {
+    left: 7%;
+    top: 70%;
+  }
+}
+.bloc-page .container_section {
+  position: absolute;
+  top: 30%;
+  background-color: #ffffff;
+  height: 70%;
+  overflow-y: scroll;
+}
+.bloc-page .container_section .container_section_myModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 70%;
+  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.bloc-page .container_section .container_section_myModal .close {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  color: #671010;
+  font-size: 100px;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+.bloc-page .container_section .container_section_myModal .close:hover,
+.bloc-page .container_section .container_section_myModal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bloc-page .container_section .container_section_myModal .modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.bloc-page .container_section .container_section_photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bloc-page .container_section .container_section_photos .container_photos_images {
+  width: 320px;
+  height: 320px;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+*:focus {
+    outline: none;
+}
+@width: 100%;
+@height: 100%;
+@position: absolute;
+@backgroundColorHeader: rgb(16, 37, 33);
+@backgroundColorSection: lighten(rgb(209, 236, 209), 50%);
+#myInputPosition() {
+    top: 0px;
+    width: 300px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    font-size: @fontSize - 0.2;
+    @font-weight: 200px;
+    padding-left: 15px;
+    @media screen {
+        @media (max-width: 420px) {
+            width: 245px;
+        }
+    }
+}
+@fontSize: 1.4em;
+
+body {
+    margin: 0;
+}
+
+.bloc-page {
+    width: @width;
+    height: @height;
+
+    .container {
+        width: @width - 10%;
+        margin: 0% 5% 0%;
+        font-size: @fontSize;
+        @media screen {
+            @media (max-width: 420px) {
+                font-size: @fontSize - 0.4;
+            }
+        }
+    }
+    @heightContainerHeader: 30%;
+    @topPositionSearch: 37%;
+    .container_header {
+        @media screen {
+            @media (max-width: 420px) {
+                display: flex;
+                direction: vertical;
+            }
+        }
+        position: @position;
+        background-color: @backgroundColorHeader;
+        height: @heightContainerHeader;
+        @left: 7%;
+        .container_header_input {
+            position: @position;
+            left: @left;
+            top: @topPositionSearch;
+            .container_header_input_span {
+                position: @position;
+                bottom: 1px;
+                color: white;
+                @media screen {
+                    @media (max-width: 420px) {
+                        left:0;
+                    }
+                }
+            }
+            .container_header_input_search {
+                position: @position;
+                #myInputPosition();
+            }
+        }
+        .container_header_select-town {
+            position: @position;
+            left: @width - 15%;
+            top: @topPositionSearch;
+            .container_header_select-town_span {
+                .container_header_input .container_header_input_span();
+                left: 31px;
+            }
+            .container_header_select-town_select {
+                position: @position;
+                #myInputPosition();
+                left: -208px;
+                @media screen {
+                    @media (max-width: 420px) {
+                        left: 0;
+                    }
+                }
+                .container_header_select-town_select_option {
+                    #myInputPosition();
+                }
+            }
+            @media screen {
+                @media (max-width: 420px) {
+                    left: @left;
+                    top: @left * 10;
+                }
+            }
+        }
+    }
+
+    @widthPhoto: 320px;
+    @heightPhoto: @widthPhoto;
+    .container_section {
+        position: @position;
+        top: @heightContainerHeader;
+        background-color: @backgroundColorSection;
+        height: @height - @heightContainerHeader;
+        overflow-y: scroll;
+        .container_section_myModal {
+            display: none;
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 0; 
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%; 
+            height: 70%; 
+            overflow: auto;
+            overflow-y: hidden;
+            overflow-x: hidden; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.9);
+            .close {
+                position: absolute;
+                top: 0;
+                right: 9px;
+                color: #671010;
+                font-size: 100px;
+                font-weight: bolder;
+                transition: 0.3s;
+                &:hover,
+                &:focus {
+                    color: #bbb;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+              .modal-content {  
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+                width: @width;
+                height: @height;
+              }
+              
+              @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)} 
+                to {-webkit-transform:scale(1)}
+              }
+              
+              @keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+              }
+        }
+        .container_section_photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .container_photos_images {
+                width: @widthPhoto;
+                height: @heightPhoto;
+                cursor: pointer;
+            }
+        }
+    }
+}
